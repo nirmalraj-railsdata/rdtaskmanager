@@ -34,5 +34,4 @@ production:
   host: ec2-174-129-253-169.compute-1.amazonaws.com
   username: elwrxodjdibspb
   password: 44658520d547d67d38f0fc2e39784422f114b5ac5e86c5275d71d88846f261c8
-  url: postgres://elwrxodjdibspb:44658520d547d67d38f0fc2e39784422f114b5ac5e86c5275d71d88846f261c8@ec2-174-129-253-169.compute-1.amazonaws.com:5432/d539t05kdbvr9q
-
+  uri: postgres://elwrxodjdibspb:44658520d547d67d38f0fc2e39784422f114b5ac5e86c5275d71d88846f261c8@ec2-174-129-253-169.compute-1.amazonaws.com:5432/d539t05kdbvr9q
