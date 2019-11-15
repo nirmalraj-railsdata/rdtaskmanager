@@ -30,10 +30,6 @@ test:
 
 production:
   <<: *default
-  adapter: postgresql
-  encoding: utf8
-  reconnect: false
-  pool: 5
   database: dc5p09mcrp55nn
   host: ec2-174-129-253-169.compute-1.amazonaws.com
   username: elwrxodjdibspb
