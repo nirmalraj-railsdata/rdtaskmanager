@@ -1,0 +1,36 @@
+<html style="background-color:#b8b894;">
+<center>
+<%= form_with model: @bucket, local: true do |form| %>
+ 
+  <% if @bucket.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@bucket.errors.count, "error") %> prohibited
+        this bucket from being saved:
+      </h2>
+      <ul>
+        <% @bucket.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+  <b>  <%= form.label :name %><br> </b>
+    <%= form.text_field :name %>
+  </p>
+ 
+  <p>
+  <b>  <%= form.label :description %><br> </b>
+    <%= form.text_area :description %>
+  </p>
+ 
+  <p>
+    <%= form.submit "Save"%>
+  </p>
+
+ 
+<% end %>
+</center>
+</html>

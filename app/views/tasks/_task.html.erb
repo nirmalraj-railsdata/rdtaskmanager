@@ -1,0 +1,21 @@
+<% if task.id != nil %>
+<center>
+
+<tr>
+<td>
+  <%= task.name %>
+  </td>
+  <td style="color:#ffffff;">|</td>
+  <td>
+  <%= task.description %>
+  </td>
+  <td style="color:#ffffff;">|</td>
+  <td>
+  <%= link_to 'Destroy Task', [task.Bucket, task],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+               </td>
+<tr>
+
+</center>
+<%end%>

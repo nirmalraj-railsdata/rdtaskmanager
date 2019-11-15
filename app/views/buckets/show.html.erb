@@ -1,0 +1,41 @@
+
+<html style="background-color:#b8b894;">
+
+<h2 style="color:Red
+
+; background-color:#00ff80;">Bucket Details</h2>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bucket.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @bucket.description %>
+</p>
+
+<%= link_to 'Edit', edit_bucket_path(@bucket) %> |
+<%= link_to 'Back', buckets_path %> |
+<%= link_to 'Delete', bucket_path(@bucket),
+ method: :delete,
+data: { confirm: 'Are you sure?' } %>
+
+
+<h2 style="color:DodgerBlue; background-color:#00ff80;">Add a Task to this bucket:</h2>
+ <%= render 'tasks/form' %>
+
+<h2 style="color:DodgerBlue; background-color:#00ff80;">Tasks</h2>
+<table>
+<tr>
+<th style="color:#ffffff;">Name</th>
+<th style="color:#ffffff;">|</th>
+<th style="color:#ffffff;">Description</th>
+<th style="color:#ffffff;">|</th>
+
+</tr>
+<%= render @bucket.tasks %>
+
+</table>
+
+
+</html>
